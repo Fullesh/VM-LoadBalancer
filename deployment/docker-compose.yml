@@ -1,0 +1,9 @@
+services:
+  victoriametrics:
+    image: victoriametrics/victoria-metrics:latest
+    ports:
+      - 8428:8428
+    volumes:
+      - ./scrape.yml:/etc/prometheus/scrape.yml:ro
+    command:
+      - --promscrape.config=/etc/prometheus/scrape.yml
