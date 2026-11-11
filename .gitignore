@@ -1,0 +1,23 @@
+# Go binaries and test artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/bin/
+/balancer
+/lab-generator
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Environment and logs
+.env
+*.log
+
+# Local VictoriaMetrics data (if mounted)
+victoria-metrics-data/
